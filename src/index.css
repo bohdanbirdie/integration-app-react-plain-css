@@ -1,0 +1,67 @@
+@layer iap_reset, iap_base, iap_tokens, iap_recipes, iap_utilities;
+
+@layer iap_reset {
+  @tailwind base;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.dropdown__popover-container {
+  border-radius: 0;
+  border-width: 1px;
+  border-color: rgb(186 230 253);
+  background-color: rgb(240 249 255);
+}
+
+.dropdown__search-input {
+  color: rgb(3 105 161);
+}
+
+.dropdown__search-input::-moz-placeholder {
+  color: rgb(125 211 252);
+}
+
+.dropdown__search-input::placeholder {
+  color: rgb(125 211 252);
+}
+
+.dropdown__search-divider {
+  border-color: rgb(186 230 253);
+}
+
+.dropdown__list {
+  background: transparent;
+}
+
+.dropdown__items-list-header {
+  background-color: rgb(240 249 255);
+  color: rgb(3 105 161);
+}
+
+.dropdown__item {
+  color: rgb(3 105 161);
+}
+
+.dropdown__item:is([data-current], :hover) {
+  background-color: rgb(224 242 254);
+}
+
+.dropdown__no-options-heading {
+  color: rgb(14 165 233);
+}
+
+.item_icon__icon {
+  border-color: rgb(125 211 252);
+  background-color: rgb(186 230 253);
+  color: rgb(12 74 110);
+}
+
+.dropdown-back-button__title {
+  color: rgb(3 105 161);
+}
